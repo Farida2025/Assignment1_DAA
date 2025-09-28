@@ -21,7 +21,7 @@ public class CsvWriter {
             for (MetricsTracker.MetricsSnapshot snapshot : results) {
                 writer.printf("%s,%s%n", algorithmName, snapshot.toString());
             }
-            System.out.println("Results for  " + algorithmName + " сохранены в " + filename);
+            System.out.println("Results for  " + algorithmName + "saved in  " + filename);
         } catch (IOException e) {
             System.err.println("Error writing to CSV" + e.getMessage());
             e.printStackTrace();

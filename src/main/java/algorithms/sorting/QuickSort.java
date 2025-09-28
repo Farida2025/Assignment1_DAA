@@ -34,19 +34,11 @@ public class QuickSort {
             int rightSize = high - pivotIndex;
 
             if (leftSize < rightSize) {
-
-
-
                 tracker.enterRecursion();
                 quickSort(array, low, pivotIndex - 1, tracker);
                 tracker.exitRecursion();
-
-
                 low = pivotIndex + 1;
             } else {
-
-
-
                 tracker.enterRecursion();
                 quickSort(array, pivotIndex + 1, high, tracker);
                 tracker.exitRecursion();
@@ -68,9 +60,7 @@ public class QuickSort {
 
         for (int j = low; j < high; j++) {
 
-
             tracker.incrementComparisons();
-
             if (array[j] <= pivot) {
                 swap(array, i, j);
                 i++;

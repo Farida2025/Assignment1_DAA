@@ -73,7 +73,7 @@ public class DeterministicSelectTest {
         assertTrue(actualComparisons < maxExpectedComparisons,
                 "Too many comparisons! Expected O(N) complexity (less than 10*N), got: " + actualComparisons);
 
-        // Проверка нижней границы:
+
         assertTrue(actualComparisons > 2.0 * N,
                 "Too few comparisons! Expected minimum 2*N, got: " + actualComparisons);
     }
